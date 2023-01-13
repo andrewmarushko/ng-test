@@ -1,6 +1,7 @@
 <div class="container-fluid px-4">
   <div class="row my-5">
     <h3 class="fs-4 mb-3">Recent Contacts</h3>
+    <div *ngFor="let users of contacts">{{ users.name }}</div>
     <div class="col">
       <table class="table bg-white rounded shadow-sm table-hover">
         <thead>

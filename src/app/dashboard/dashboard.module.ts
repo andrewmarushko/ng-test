@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ContactsComponent } from './components/contacts/contacts.component';
 import { ProductsComponent } from './components/products/products.component';
 import { ReportsComponent } from './components/reports/reports.component';
+import { ContactsService } from './services/contacts.service';
 
 const routes: Routes = [
   {
@@ -28,6 +29,6 @@ const routes: Routes = [
 @NgModule({
   imports: [CommonModule, RouterModule.forChild(routes)],
   declarations: [ContactsComponent, ProductsComponent, ReportsComponent],
-  providers: [],
+  providers: [ContactsService],
 })
 export class DashboardModule {}
