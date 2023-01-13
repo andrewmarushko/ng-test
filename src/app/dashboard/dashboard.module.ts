@@ -18,6 +18,11 @@ const routes: Routes = [
     path: 'reports',
     component: ReportsComponent,
   },
+  {
+    path: '',
+    redirectTo: 'contacts',
+    pathMatch: 'full',
+  },
 ];
 
 @NgModule({
