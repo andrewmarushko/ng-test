@@ -1,0 +1,18 @@
+#wrapper {
+  overflow-x: hidden;
+  background: linear-gradient(
+    0deg,
+    rgb(243, 242, 242) 0%,
+    rgba(255, 255, 255, 0.881) 100%
+  );
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+@media (min-width: 768px) {
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+}

@@ -1,12 +1,7 @@
-<div>
-  <div class="sidebar">
-    <crm-sidebar></crm-sidebar>
+<div class="d-flex" id="wrapper">
+  <crm-sidebar></crm-sidebar>
+  <div id="page-content-wrapper">
+    <crm-header></crm-header>
+    <router-outlet></router-outlet>
   </div>
-  <main class="main">
-    <header>header</header>
-    <section class="content">
-      content
-      <router-outlet></router-outlet>
-    </section>
-  </main>
 </div>
